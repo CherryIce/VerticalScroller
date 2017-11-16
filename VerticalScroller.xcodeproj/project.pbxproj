@@ -15,6 +15,9 @@
 		8F5B2C941FBD5EF100789C1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5B2C931FBD5EF100789C1D /* main.m */; };
 		8F5B2C9E1FBD5EF100789C1D /* VerticalScrollerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5B2C9D1FBD5EF100789C1D /* VerticalScrollerTests.m */; };
 		8F5B2CA91FBD5EF100789C1D /* VerticalScrollerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5B2CA81FBD5EF100789C1D /* VerticalScrollerUITests.m */; };
+		8F5B2CBB1FBD5F4C00789C1D /* SMKCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5B2CB81FBD5F4C00789C1D /* SMKCycleScrollView.m */; };
+		8F5B2CBC1FBD5F4C00789C1D /* UIView+SEKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5B2CBA1FBD5F4C00789C1D /* UIView+SEKExtension.m */; };
+		8F5B2CC01FBD609E00789C1D /* CLRollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5B2CBF1FBD609D00789C1D /* CLRollLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		8F5B2CA41FBD5EF100789C1D /* VerticalScrollerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VerticalScrollerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F5B2CA81FBD5EF100789C1D /* VerticalScrollerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerticalScrollerUITests.m; sourceTree = "<group>"; };
 		8F5B2CAA1FBD5EF100789C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F5B2CB71FBD5F4C00789C1D /* SMKCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMKCycleScrollView.h; sourceTree = "<group>"; };
+		8F5B2CB81FBD5F4C00789C1D /* SMKCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMKCycleScrollView.m; sourceTree = "<group>"; };
+		8F5B2CB91FBD5F4C00789C1D /* UIView+SEKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SEKExtension.h"; sourceTree = "<group>"; };
+		8F5B2CBA1FBD5F4C00789C1D /* UIView+SEKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SEKExtension.m"; sourceTree = "<group>"; };
+		8F5B2CBE1FBD609D00789C1D /* CLRollLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRollLabel.h; sourceTree = "<group>"; };
+		8F5B2CBF1FBD609D00789C1D /* CLRollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRollLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,8 @@
 		8F5B2C831FBD5EF100789C1D /* VerticalScroller */ = {
 			isa = PBXGroup;
 			children = (
+				8F5B2CBD1FBD609D00789C1D /* CLRollLabel */,
+				8F5B2CB61FBD5F4C00789C1D /* SMKCycleScrollView */,
 				8F5B2C841FBD5EF100789C1D /* AppDelegate.h */,
 				8F5B2C851FBD5EF100789C1D /* AppDelegate.m */,
 				8F5B2C871FBD5EF100789C1D /* ViewController.h */,
@@ -130,6 +141,26 @@
 				8F5B2CAA1FBD5EF100789C1D /* Info.plist */,
 			);
 			path = VerticalScrollerUITests;
+			sourceTree = "<group>";
+		};
+		8F5B2CB61FBD5F4C00789C1D /* SMKCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				8F5B2CB71FBD5F4C00789C1D /* SMKCycleScrollView.h */,
+				8F5B2CB81FBD5F4C00789C1D /* SMKCycleScrollView.m */,
+				8F5B2CB91FBD5F4C00789C1D /* UIView+SEKExtension.h */,
+				8F5B2CBA1FBD5F4C00789C1D /* UIView+SEKExtension.m */,
+			);
+			path = SMKCycleScrollView;
+			sourceTree = "<group>";
+		};
+		8F5B2CBD1FBD609D00789C1D /* CLRollLabel */ = {
+			isa = PBXGroup;
+			children = (
+				8F5B2CBE1FBD609D00789C1D /* CLRollLabel.h */,
+				8F5B2CBF1FBD609D00789C1D /* CLRollLabel.m */,
+			);
+			path = CLRollLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +296,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F5B2CBC1FBD5F4C00789C1D /* UIView+SEKExtension.m in Sources */,
+				8F5B2CBB1FBD5F4C00789C1D /* SMKCycleScrollView.m in Sources */,
+				8F5B2CC01FBD609E00789C1D /* CLRollLabel.m in Sources */,
 				8F5B2C891FBD5EF100789C1D /* ViewController.m in Sources */,
 				8F5B2C941FBD5EF100789C1D /* main.m in Sources */,
 				8F5B2C861FBD5EF100789C1D /* AppDelegate.m in Sources */,
@@ -433,6 +467,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LGN7SU938D;
 				INFOPLIST_FILE = VerticalScroller/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qianft.VerticalScroller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,6 +482,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LGN7SU938D;
 				INFOPLIST_FILE = VerticalScroller/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qianft.VerticalScroller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
